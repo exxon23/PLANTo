@@ -1,19 +1,16 @@
 {
   "expo": {
-    "name": "PLANTo-app",
-    "slug": "PLANTo-app",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "PLANTo",
+    "slug": "PLANTo",
+    "privacy": "public",
+    "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/images/home.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -22,11 +19,20 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "versionCode": 1,
+      "package": "com.sebastianmach.planto",
+      "permissions": ["CAMERA"]
     },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sebastianmach.planto",
+      "buildNumber": "1.0.0",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "1070312464382-mvpupb4ss64oparo9f1eebahscatf52l.apps.googleusercontent.com"
+        }
+      }
     }
   }
 }
